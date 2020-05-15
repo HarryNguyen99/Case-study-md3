@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Review-du-lich:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Review_du_lich_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Review-du-lich/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Review-du-lich" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
