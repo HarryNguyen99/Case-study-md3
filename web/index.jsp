@@ -7,10 +7,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+  <title>Trang Chu Website Du Lich</title>
+</head>
+<body>
+<div id="page">
+  <button><a href="/login?action=signin">Trang Đăng Nhập</a></button>
+</div>
+</body>
 </html>
