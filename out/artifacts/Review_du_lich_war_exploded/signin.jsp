@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -23,7 +24,7 @@
 <body>
 <div class="container">
     <div class="d-flex justify-content-center h-100">
-        <div class="card">
+        <div class="card-signin">
             <div class="card-header">
                 <h3>Sign In</h3>
             </div>
@@ -31,18 +32,22 @@
                 <form>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text "><i class="fa fa-user"></i></span>
+                            <span class="input-group-text ">
+                                <img src="img/ic_user.png" width="25" height="25">
+                            </span>
                         </div>
                         <input type="text" class="form-control" placeholder="username">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text ">
+                                <img src="img/ic_key.png" width="25" height="25">
+                            </span>
                         </div>
                         <input type="password" class="form-control" placeholder="password">
                     </div>
                     <div class="row align-items-center remember">
-                        <input type="checkbox">Remember Me
+                        <input type="checkbox">Remember
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Sign in" class="btn float-right signin_btn">
