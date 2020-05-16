@@ -36,14 +36,14 @@ public class DatabaseServiceImpl implements DatabaseService {
             conn = mysqlConnect.openConnection(jdbcURL);
 
             String sql_query = "insert into casestudy3_database.account(id_role, username, password, fullname, phonenumber, email, address, active, online)" +
-                                        "values('" +
-                                                    "2 " +
+                                        "values(" +
+                                                    "2, '" +
                                                     username + "', '" +
                                                     password + "', '" +
                                                     fullname + "', '" +
-                                                    phonenumber + "', " +
+                                                    phonenumber + "', '" +
                                                     email + "', '" +
-                                                    address + "', '" +
+                                                    address + "', " +
                                                     "0, 0" +
                                                   ");";
 
