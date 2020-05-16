@@ -81,12 +81,24 @@
     </div>
 </div>
 <div class="container">
-    <h2>HOT reviews</h2>
+    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
-        <div class="d-flex justify-content-start p-1 col-md-4 " style="height: 527px; background: #0b2e13">
+        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
 
         </div>
-        <div class="col-md-4" style="height: 527px; background: #0b2e13">
+        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
+
+        </div>
+        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
+
+        </div>
+    </div>
+    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>
+    <div class="row">
+        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
+
+        </div>
+        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
 
         </div>
         <div class="col-md-4 " style="height: 527px; background: #0b2e13">
@@ -94,7 +106,12 @@
         </div>
     </div>
 </div>
-
+<div class="container-fluid" style="background: black; height: 500px; margin-top: 20px">
+    <div style=" width: 700px; height: 450px; margin: 25px auto; text-align: center">
+        <img src="img/logoDBT.png" style="margin: 70px auto 30px auto">
+        <p style="font-size: 60px;color: white ">Luôn đồng hành cùng bạn</p>
+    </div>
+</div>
 
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.js"></script>
