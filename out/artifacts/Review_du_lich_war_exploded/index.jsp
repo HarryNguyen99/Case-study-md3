@@ -23,9 +23,10 @@
 </head>
 <body>
 <%
-    String username = request.getParameter("account");
+    String fullname = request.getParameter("account");
+    String role = request.getParameter("typeAccount");
 %>
-<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
+<nav id="navigation" class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
     <div class="container-fluid">
         <a class="navbar-branch" id="logo" href="#">
             <img src="img/logoDBT2.png" height="40"/></a>
@@ -64,9 +65,20 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" style="color: white; font-size: 19px"><%=username%></a>
-                    <a class="nav-link" style="color: white; font-size: 19px"
-                       href="/login?action=signin">Đăng Nhập</a>
+                    <%
+                        if (fullname == null) {
+                    %>
+                            <a class="nav-link" style="color: white; font-size: 19px" href="/login?action=signin">Đăng Nhập</a>
+                    <%
+                        } else {
+                    %>
+                            <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
+                                    <a id="role" href="#" style="color: red; font-size: 17px"><%=role%></a>
+                            </p>
+                            <a id="dangxuat" class="nav-link" style="color: white; font-size: 19px" href="/logout">Đăng Xuất</a>
+                    <%
+                        }
+                    %>
                 </li>
             </ul>
         </div>
@@ -89,13 +101,6 @@
 <div class="container">
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
-<<<<<<< HEAD
-        <div id="col1" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
-        </div>
-        <div id="col2" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
-        </div>
-        <div id="col3" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
-=======
         <div class="col-md-4 spacing" style="height: 380px">
             <div class="col-md-12" style="background: white; height: 380px">
                 <img src="img/cau-rong-da-nang.jpg"
@@ -107,24 +112,23 @@
                          style="width: 25px; height: 25px" class="float-right">
                 </div>
                 <div style="width: 100%" class="float-left">
-                <h4>Cầu Rồng Đà NẴng</h4>
-                <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
-                    cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
-                    ... Xem thêm</p>
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... Xem thêm</p>
                 </div>
             </div>
 
         </div>
         <div class="col-md-4 spacing" style="height: 380px">
-            <div class="col-md-12"style="background: white">
+            <div class="col-md-12" style="background: white">
                 <h2>hhhhhfldjlkfjs</h2>ß
             </div>
         </div>
         <div class="col-md-4 spacing" style="height: 380px">
-            <div class="col-md-12"style="background: white">
+            <div class="col-md-12" style="background: white">
                 <h2>hhhhhfldjlkfjs</h2>
             </div>
->>>>>>> 3c4b3d9366e4439428988c253c1a463564f43f56
         </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>

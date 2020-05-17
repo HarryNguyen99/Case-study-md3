@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.List;
 
 import com.codegym.model.SignupAccount;
 import com.codegym.service.DatabaseServiceImpl;
@@ -129,13 +129,19 @@ public class LoginServlet extends HttpServlet {
     private void signin(HttpServletRequest request, HttpServletResponse response) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        boolean result = databaseService.checkAccountExists(username, password);
+        List<String> inforUser = databaseService.checkAccountExists(username, password);
 
-        String resultStr = "";
-        resultStr = (result) ? username : "Tai Khoan nay khong ton tai !!!";
+        String fullnameUser = "";
+        fullnameUser = (inforUser != null) ? inforUser.get(0) : "Tai Khoan nay khong ton tai !!!";
         try {
-            request.setAttribute("username", username);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("view/welcome-temp.jsp?action=welcome-temp&account=" + resultStr);
+            request.setAttribute("fullnameUser", fullnameUser);
+            request.setAttribute("typeAccount", inforUser.get(1));
+            RequestDispatcher dispatcher = null;
+            if (fullnameUser != null) {
+                dispatcher = request.getRequestDispatcher("view/welcome-to.jsp?action=welcome-to&account=" + fullnameUser + "&typeAccount=" + inforUser.get(1));
+            } else {
+                dispatcher = request.getRequestDispatcher("view/failed-signin.jsp");
+            }
             dispatcher.forward(request, response);
         } catch (IOException ex) {
             ex.printStackTrace();

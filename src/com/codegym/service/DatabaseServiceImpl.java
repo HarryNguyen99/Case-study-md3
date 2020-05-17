@@ -2,10 +2,11 @@ package com.codegym.service;
 
 import com.codegym.model.SignupAccount;
 
+import java.util.List;
+import java.util.ArrayList;
+
 import java.sql.*;
-import library.templatepattern.connect.*;
 import library.templatepattern.connect.mysql.MySQLConnect;
-import library.templatepattern.execute.*;
 import library.templatepattern.execute.mysql.*;
 
 import java.util.Properties;
@@ -62,7 +63,6 @@ public class DatabaseServiceImpl implements DatabaseService {
             }
         }
 
-        // Sending mail to user activation ...
         SendingEmail sendingEmail = new SendingEmail(emailAddress);
         sendingEmail.sendEmail();
     }
@@ -130,26 +130,43 @@ public class DatabaseServiceImpl implements DatabaseService {
         }
     }
 
-    public boolean checkAccountExists(String username, String password) {
+    public List<String> checkAccountExists(String username, String password) {
         try {
             MySQLConnect mysqlConnect = new MySQLConnect(jdbcURL);
             mysqlConnect.setDBDriver();
             mysqlConnect.setCredentials(userDB, passDB);
             conn = mysqlConnect.openConnection(jdbcURL);
 
-            String sql_query = "select username, password from casestudy3_database.account where username =  '" + username + "' and password = '" + password + "' and active = 1;";
+            String sql_query = "select role, username, password, fullname from casestudy3_database.account " +
+                                      "inner join casestudy3_database.role using(id_role)" +
+                                      "where username =  '" + username + "' and password = '" + password + "' and active = 1;";
             System.out.println(sql_query);
+
+            String fullnameUser = "";
+            String roleUser = "";
 
             MySQLExecute executeObj = new MySQLExecute(conn);
             ResultSet resultSet = executeObj.execute(sql_query);
+            List<String> inforUser = new ArrayList<>();
 
             try {
                 if (resultSet.next()) {
-                    return true;
+                    fullnameUser = resultSet.getString("fullname");
+                    roleUser = resultSet.getString("role");
+                    inforUser.add(fullnameUser);
+                    inforUser.add(roleUser);
+
+                    String sql_updateOnline = "update casestudy3_database.account set online = 1 where username = '" + username + "';";
+                    System.out.println(sql_updateOnline);
+                    executeObj.execute(sql_updateOnline);
+
+                    return inforUser;
                 }
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
+
+            return null;
         } finally {
             try {
                 if (conn != null) {
@@ -160,6 +177,5 @@ public class DatabaseServiceImpl implements DatabaseService {
                 ex.printStackTrace();
             }
         }
-        return false;
     }
 }

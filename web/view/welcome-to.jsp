@@ -7,11 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+    String test = (String)request.getAttribute("fullnameUser");
+%>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>welcone to</title>
+    <title>welcome to</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
@@ -69,11 +72,11 @@
     </div>
 </nav>
 <div class="container">
-    <div class="formConfirm">
-        <h1 class="success">Chào Mừng Bạn !!!</h1>
-        <div class="form-group">
-            <input id="submitBtn" type="submit" name="submit"
-                   value="Quay lại trang chủ" class="backindex_btn">
+    <div id="main" class="formConfirm">
+        <div id="successLoggIn">
+            <h1 class="success">Chào Mừng <span id="nameLogIn">${fullnameUser}</span> !!!</h1>
+            <p class="success">Bạn đã đăng nhập thành công, click vào đường link dưới đây để quay về trang chủ</p>
+            <a href="/index.jsp?action=index&account=${fullnameUser}&typeAccount=${typeAccount}">Quay Về Trang Chủ</a>
         </div>
     </div>
 </div>
