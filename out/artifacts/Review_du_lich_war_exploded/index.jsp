@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +51,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Tour travel</a>
+                       href="#">Hot tour</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
@@ -70,10 +72,10 @@
         </div>
     </div>
 </nav>
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="banner" class="carousel slide" data-ride="carousel">
     <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+        <li data-target="#banner" data-slide-to="1"></li>
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -87,11 +89,42 @@
 <div class="container">
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
+<<<<<<< HEAD
         <div id="col1" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
         </div>
         <div id="col2" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
         </div>
         <div id="col3" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
+=======
+        <div class="col-md-4 spacing" style="height: 380px">
+            <div class="col-md-12" style="background: white; height: 380px">
+                <img src="img/cau-rong-da-nang.jpg"
+                     style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px">
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                <h4>Cầu Rồng Đà NẴng</h4>
+                <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                    cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                    ... Xem thêm</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 spacing" style="height: 380px">
+            <div class="col-md-12"style="background: white">
+                <h2>hhhhhfldjlkfjs</h2>ß
+            </div>
+        </div>
+        <div class="col-md-4 spacing" style="height: 380px">
+            <div class="col-md-12"style="background: white">
+                <h2>hhhhhfldjlkfjs</h2>
+            </div>
+>>>>>>> 3c4b3d9366e4439428988c253c1a463564f43f56
         </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>
@@ -125,8 +158,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/utilities.js"></script>
-<script type="text/javascript" src="../js/validate-form.js"></script>
-<script type="text/javascript" src="../js/validate-register.js"></script>
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/validate-form.js"></script>
+<script type="text/javascript" src="js/validate-register.js"></script>
 </body>
 </html>

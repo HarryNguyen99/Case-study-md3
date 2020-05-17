@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/singn-in.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../css/singn-in.css">
     <title>Sign In</title>
 
 </head>
@@ -33,7 +33,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
-                                <img src="img/ic_user.png" width="25" height="25">
+                                <img src="../img/ic_user.png" width="25" height="25">
                             </span>
                         </div>
                         <input id="usrInput" type="text" name="username" class="form-control" placeholder="username">
@@ -42,7 +42,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
-                                <img src="img/ic_key.png" width="25" height="25">
+                                <img src="../img/ic_key.png" width="25" height="25">
                             </span>
                         </div>
                         <input id="pwd" type="password" name="password" class="form-control" placeholder="password">

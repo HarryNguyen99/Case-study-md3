@@ -1,3 +1,7 @@
+body {
+    background: #DCE3EA;
+}
+
 .search-box.hovered, .search-box:hover, .search-box:active {
     background: #ffffff;
 }

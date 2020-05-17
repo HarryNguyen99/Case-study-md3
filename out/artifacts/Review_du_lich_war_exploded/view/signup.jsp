@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/singn-in.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../css/singn-in.css">
     <title>Sign Up</title>
 
 </head>
@@ -33,7 +33,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
-                                <img src="img/ic_name.png" width="25" height="25">
+                                <img src="../img/ic_name.png" width="25" height="25">
                             </span>
                         </div>
                         <input type="text" name="fullname" class="form-control" placeholder="full name">
@@ -41,7 +41,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
-                                <img src="img/ic_user.png" width="25" height="25">
+                                <img src="../img/ic_user.png" width="25" height="25">
                             </span>
                         </div>
                         <input type="text" name="username" class="form-control" placeholder="username">
@@ -49,7 +49,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
-                                <img src="img/ic_key.png" width="25" height="25">
+                                <img src="../img/ic_key.png" width="25" height="25">
                             </span>
                         </div>
                         <input type="password" name="password" class="form-control" placeholder="password"><br>
@@ -58,7 +58,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
-                                <img src="img/ic_key.png" width="25" height="25">
+                                <img src="../img/ic_key.png" width="25" height="25">
                             </span>
                         </div>
                         <input type="password" class="form-control" placeholder="confirm password">
@@ -66,7 +66,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
-                                <img src="img/ic_email.png" width="25" height="25">
+                                <img src="../img/ic_email.png" width="25" height="25">
                             </span>
                         </div>
                         <input type="text" name="email" class="form-control" placeholder="email">
@@ -74,7 +74,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
-                                <img src="img/ic_phone.png" width="25" height="25">
+                                <img src="../img/ic_phone.png" width="25" height="25">
                             </span>
                         </div>
                         <input type="text" name="phonenumber" class="form-control" placeholder="phonenumber">
@@ -82,7 +82,7 @@
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
-                                <img src="img/ic_address.png" width="25" height="25">
+                                <img src="../img/ic_address.png" width="25" height="25">
                             </span>
                         </div>
                         <input type="text" name="address" class="form-control" placeholder="address">
@@ -98,8 +98,8 @@
         </div>
     </div>
 </div>
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
