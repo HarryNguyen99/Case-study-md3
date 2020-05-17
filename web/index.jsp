@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+<%
+    String username = request.getParameter("account");
+%>
 <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
     <div class="container-fluid">
         <a class="navbar-branch" id="logo" href="#">
@@ -59,6 +62,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a href="#" style="color: white; font-size: 19px"><%=username%></a>
                     <a class="nav-link" style="color: white; font-size: 19px"
                        href="/login?action=signin">Đăng Nhập</a>
                 </li>
@@ -84,13 +88,10 @@
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
         <div id="col1" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
-            <div class="content">Testing</div>
         </div>
         <div id="col2" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
-            <div class="content">Testing</div>
         </div>
         <div id="col3" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
-            <div class="content">Testing</div>
         </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>

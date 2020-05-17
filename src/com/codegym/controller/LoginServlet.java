@@ -18,13 +18,24 @@ public class LoginServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String action = request.getParameter("action");
+        String account = request.getParameter("account");
+
         if (action == null){
             action = "";
         }
+        if (account == null) {
+            account = "";
+        }
 
         switch(action) {
+            case "index":
+                showIndexPage(request, response);
+                break;
             case "signin":
                 showSignInForm(request, response);
+                break;
+            case "welcome-temp":
+                showWelcomeForm(request, response);
                 break;
             case "signup":
                 showSignUpForm(request, response);
@@ -40,8 +51,14 @@ public class LoginServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String action = request.getParameter("action");
+        String account = request.getParameter("account");
+
         if (action == null) {
             action = "";
+        }
+
+        if (account == null) {
+            account = "";
         }
 
         switch (action) {
@@ -56,6 +73,11 @@ public class LoginServlet extends HttpServlet {
         }
     }
 
+    private void showIndexPage(HttpServletRequest request, HttpServletResponse response) {
+        String username = request.getParameter("account");
+        request.setAttribute("username", username);
+    }
+
     private void showSignUpForm(HttpServletRequest request, HttpServletResponse response) {
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/signup.jsp");
         try {
@@ -67,6 +89,15 @@ public class LoginServlet extends HttpServlet {
 
     private void showSignInForm(HttpServletRequest request, HttpServletResponse response) {
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/signin.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    private void showWelcomeForm(HttpServletRequest request, HttpServletResponse response) {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/welcome-temp.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException ex) {
@@ -101,20 +132,14 @@ public class LoginServlet extends HttpServlet {
         boolean result = databaseService.checkAccountExists(username, password);
 
         String resultStr = "";
+        resultStr = (result) ? username : "Tai Khoan nay khong ton tai !!!";
         try {
-            PrintWriter out = response.getWriter();
-            out.println("<html>");
-            out.println("<body>");
-            out.println("<h1>" + (resultStr = (result) ? username : "Tai Khoan nay khong ton tai !!!"));
-            out.println("</h1>");
-            out.println("<button>");
-            out.println("<a href='/index'>");
-            out.println("</a>");
-            out.println("</button>");
-            out.println("</body>");
-            out.println("</html>");
-
+            request.setAttribute("username", username);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("view/welcome-temp.jsp?action=welcome-temp&account=" + resultStr);
+            dispatcher.forward(request, response);
         } catch (IOException ex) {
+            ex.printStackTrace();
+        } catch (ServletException ex) {
             ex.printStackTrace();
         }
     }
