@@ -14,7 +14,7 @@ html,body{
 }
 
 .card-signin{
-    height: 370px;
+    height: 450px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
@@ -94,3 +94,22 @@ html,body{
 .links a{
     margin-left: 4px;
 }
+ 
+.input-group-prepend {
+    margin-bottom: 20px;
+}
+
+.tip {
+    color: white;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: 50px;
+}
+
+.feedback {
+    color: red;;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: 50px;
+}
+

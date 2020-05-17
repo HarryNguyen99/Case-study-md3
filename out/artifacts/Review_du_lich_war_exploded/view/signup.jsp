@@ -29,14 +29,14 @@
                 <h3>Sign Up</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form method="post">
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
                                 <img src="img/ic_name.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="full name">
+                        <input type="text" name="fullname" class="form-control" placeholder="full name">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -44,7 +44,7 @@
                                 <img src="img/ic_user.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="username">
+                        <input type="text" name="username" class="form-control" placeholder="username">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -52,7 +52,7 @@
                                 <img src="img/ic_key.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="password" class="form-control" placeholder="password"><br>
+                        <input type="password" name="password" class="form-control" placeholder="password"><br>
                         <p class="validated" style="color: white">Password có ít nhất 6 ký tự và không chứa ký tự đặc biệt</p>
                     </div>
                     <div class="input-group form-group">
@@ -69,7 +69,7 @@
                                 <img src="img/ic_email.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="email">
+                        <input type="text" name="email" class="form-control" placeholder="email">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -77,7 +77,7 @@
                                 <img src="img/ic_phone.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="phonenumber">
+                        <input type="text" name="phonenumber" class="form-control" placeholder="phonenumber">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -85,7 +85,7 @@
                                 <img src="img/ic_address.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="address">
+                        <input type="text" name="address" class="form-control" placeholder="address">
                     </div>
                     <div class="row align-items-center policy">
                         <input type="checkbox" > You agree to our Privacy policy and term of condition

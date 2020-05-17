@@ -29,14 +29,15 @@
                 <h3>Sign In</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form method="post">
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text ">
                                 <img src="img/ic_user.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="username">
+                        <input id="usrInput" type="text" name="username" class="form-control" placeholder="username">
+                        <div id="feedbackUsername" class="tip"></div>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -44,19 +45,20 @@
                                 <img src="img/ic_key.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="password" class="form-control" placeholder="password">
+                        <input id="pwd" type="password" name="password" class="form-control" placeholder="password">
+                        <div id="feedbackPassword" class="tip"></div>
                     </div>
                     <div class="row align-items-center remember">
                         <input type="checkbox">Remember
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Sign in" class="btn float-right signin_btn">
+                        <input id="submitBtn" type="submit" name="submit" value="Sign in" class="btn float-right signin_btn">
                     </div>
                 </form>
             </div>
             <div class="card-footer">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account?<a style="color: #FFC312" href="#">Sign Up</a>
+                    Don't have an account?<a style="color: #FFC312" href="/login?action=signup">Sign Up</a>
                 </div>
                 <div class="d-flex justify-content-center">
                     <a style="color: #FFC312" href="#">Forgot your password?</a>
@@ -65,8 +67,8 @@
         </div>
     </div>
 </div>
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -76,5 +78,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/utilities.js"></script>
+<script type="text/javascript" src="../js/validate-form.js"></script>
+<script type="text/javascript" src="../js/validate-register.js"></script>
 </body>
 </html>

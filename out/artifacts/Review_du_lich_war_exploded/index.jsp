@@ -6,6 +6,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<<<<<<< HEAD
+<html>
+<head>
+  <title>Trang Chu Website Du Lich</title>
+</head>
+<body>
+<div id="page">
+  <button><a href="/login?action=signin">Trang Đăng Nhập</a></button>
+</div>
+=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -124,5 +134,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+>>>>>>> be0c6a89764c8d5b7443ace9570c5079ec82560a
 </body>
 </html>
