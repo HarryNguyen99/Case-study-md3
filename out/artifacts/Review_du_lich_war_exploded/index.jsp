@@ -35,14 +35,14 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
             <div class="search-box">
-                <input class="form-control" placeholder="Search" type="text">
+                <input class="form-control" placeholder="Tìm kiếm: Địa điểm, Lịch trình..." type="text">
                 <button class="btn btn-link search-btn"><i class="fa fa-search"></i>
                 </button>
             </div>
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Trang chủ
+                       href="#">Trang Chủ
                         <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -51,15 +51,19 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Hot tour</a>
+                       href="#">Hot Tour</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Vé máy bay</a>
+                       href="#">Vé Máy Bay</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Khách sạn</a>
+                       href="#">Khách Sạn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white; font-size: 19px"
+                       href="#">Combo Siêu Rẻ</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
