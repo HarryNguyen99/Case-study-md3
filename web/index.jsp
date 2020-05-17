@@ -61,10 +61,6 @@
                     <a class="nav-link" style="color: white; font-size: 19px"
                        href="#">Khách Sạn</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Combo Siêu Rẻ</a>
-                </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" style="margin-top: 9px; margin-right: 10px">
@@ -86,10 +82,10 @@
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/banner2.png">
+            <img src="img/images1.png">
         </div>
         <div class="carousel-item">
-            <img src="img/banner3.png">
+            <img src="img/banner2.png.jpg">
         </div>
     </div>
 </div>
