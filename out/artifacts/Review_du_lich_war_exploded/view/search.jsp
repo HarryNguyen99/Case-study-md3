@@ -87,7 +87,7 @@
         <div class="col-md-4 hot-tour"  >
             <div style="background: white; float: left">
                 <div style="width:110px; height: 110px; margin-left: 0; margin-right: 0">
-                    <img src="../img/background.jpg" height="50px" width="50px">
+                    <img src="../img/background.jpg" height="70px" width="70px">
                 </div>
 
                 <div style="margin: 0 auto">
