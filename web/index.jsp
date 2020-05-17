@@ -6,16 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<<<<<<< HEAD
-<html>
-<head>
-  <title>Trang Chu Website Du Lich</title>
-</head>
-<body>
-<div id="page">
-  <button><a href="/login?action=signin">Trang Đăng Nhập</a></button>
-</div>
-=======
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,14 +84,20 @@
 <div class="container">
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div class="col-md-4 spacing" style="height: 527px">
+        <div class="col-md-12" style="background: red">
+            <h2>hhhhhfldjlkfjsdljflsdjfljsdlfjsdljfsdljfl</h2>
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div class="col-md-4 spacing" style="height: 527px">
+            <div class="col-md-12" style="background: black">
+                <h2>fjgkfjgljkfgldfjgldjgldjgljfgldjfgljd</h2>
+            </div>
+        </div>
+        <div class="col-md-4 spacing" style="height: 527px">
+            <div class="col-md-12" style="background: red">
+                <h2>flglfkjgldkfjgjgkldjgkldgjkldjglfhgldjl</h2>
+            </div>
         </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>

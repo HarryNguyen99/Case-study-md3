@@ -1,3 +1,7 @@
+body {
+    background: #DCE3EA;
+}
+
 .search-box.hovered, .search-box:hover, .search-box:active {
     background: #ffffff;
 }
@@ -31,4 +35,8 @@
 
 .menus  {
     color: white;
+}
+
+.spacing {
+    margin-left: 10px;
 }
