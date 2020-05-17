@@ -23,7 +23,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
     <div class="container-fluid">
         <a class="navbar-branch" id="logo" href="#">
-            <img src="img/logoDBT2.png" height="40"/></a>
+            <img src="img/logoDBT.png" height="40"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive">
             <samp class="navbar-toggler-icon"></samp>
