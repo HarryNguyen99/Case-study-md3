@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,7 +48,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Tour travel</a>
+                       href="#">Hot tour</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
@@ -61,7 +62,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Đăng Nhập</a>
+                       href="/login?action=signin">Đăng Nhập</a>
                 </li>
             </ul>
         </div>
@@ -98,7 +99,6 @@
             <div class="col-md-12" style="background: red">
                 <h2>flglfkjgldkfjgjgkldjgkldgjkldjglfhgldjl</h2>
             </div>
-        </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>
     <div class="row">
@@ -131,6 +131,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
->>>>>>> be0c6a89764c8d5b7443ace9570c5079ec82560a
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/validate-form.js"></script>
+<script type="text/javascript" src="js/validate-register.js"></script>
 </body>
 </html>

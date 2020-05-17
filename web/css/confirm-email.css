@@ -1,0 +1,23 @@
+body {
+    background: #DCE3EA;
+}
+.formConfirm {
+    width: 900px;
+    height: 300px;
+    margin: 100px auto 300px auto;
+    background: white;
+    text-align: center;
+}
+.confirm {
+    padding-top: 100px ;
+}
+
+.success {
+    padding-top: 100px ;
+    color: #06fd3f;
+}
+
+.not-login {
+    padding-top: 100px ;
+    color: #ff0000;
+}
