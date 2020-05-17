@@ -21,3 +21,15 @@ body {
     padding-top: 100px ;
     color: #ff0000;
 }
+.backindex_btn_btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.backindex_btn_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    padding-left: 400px;
+    padding-bottom: 100px;
+}
