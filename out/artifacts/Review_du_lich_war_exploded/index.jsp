@@ -36,14 +36,14 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
             <div class="search-box">
-                <input class="form-control" placeholder="Search" type="text">
+                <input class="form-control" placeholder="Tìm kiếm: Địa điểm, Lịch trình..." type="text">
                 <button class="btn btn-link search-btn"><i class="fa fa-search"></i>
                 </button>
             </div>
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Trang chủ
+                       href="#">Trang Chủ
                         <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -52,18 +52,26 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Hot tour</a>
+                       href="#">Hot Tour</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Vé máy bay</a>
+                       href="#">Vé Máy Bay</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Khách sạn</a>
+                       href="#">Khách Sạn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white; font-size: 19px"
+                       href="#">Combo Siêu Rẻ</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="margin-top: 9px; margin-right: 10px">
+                    <a href="#" style="color: white; font-size: 19px">
+                    </a>
+                </li>
                 <li class="nav-item">
                     <%
                         if (fullname == null) {
@@ -72,9 +80,9 @@
                     <%
                         } else {
                     %>
-                            <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
+<%--                            <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
                                     <a id="role" href="#" style="color: red; font-size: 17px"><%=role%></a>
-                            </p>
+                            </p>--%>
                             <a id="dangxuat" class="nav-link" style="color: white; font-size: 19px" href="/logout">Đăng Xuất</a>
                     <%
                         }
@@ -102,9 +110,10 @@
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
         <div class="col-md-4 spacing" style="height: 380px">
+        <div class="col-md-4 hot-review-tour">
             <div class="col-md-12" style="background: white; height: 380px">
-                <img src="img/cau-rong-da-nang.jpg"
-                     style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
                 <div style="width: 100%; margin-top: 10px">
                     <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
                     <h4 class="float-right" style="margin-left: 5px">5.0</h4>
@@ -116,9 +125,25 @@
                     <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
                         cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
                         ... Xem thêm</p>
+                        ... <a href="#">Xem thêm</a></p>
                 </div>
             </div>
-
+            <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... <a href="#">Xem thêm</a></p>
+                </div>
+            </div>
         </div>
         <div class="col-md-4 spacing" style="height: 380px">
             <div class="col-md-12" style="background: white">
@@ -128,19 +153,172 @@
         <div class="col-md-4 spacing" style="height: 380px">
             <div class="col-md-12" style="background: white">
                 <h2>hhhhhfldjlkfjs</h2>
+        <div class="col-md-4 hot-review-tour">
+            <div class="col-md-12" style="background: white; height: 380px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... <a href="#">Xem thêm</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... <a href="#">Xem thêm</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 hot-review-tour">
+            <div class="col-md-12" style="background: white; height: 380px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... <a href="#">Xem thêm</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... <a href="#">Xem thêm</a></p>
+                </div>
             </div>
         </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>
     <div class="row">
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div class="col-md-4 hot-review-tour">
+            <div class="col-md-12" style="background: white; height: 280px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4>Khám Phá du lịch Đá Nẵng</h4>
+                </div>
+                <div>
+                    <img src="img/money.png"
+                         style="width: 20px; height: 20px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">1.385.000</p>
+                    <img src="img/time.png"
+                         style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">3 ngày</p>
+                </div>
+            </div>
+            <div class="col-md-12" style="background: white; height: 280px; margin-top: 40px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4>Khám Phá du lịch Đá Nẵng</h4>
+                </div>
+                <div>
+                    <img src="img/money.png"
+                         style="width: 20px; height: 20px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">1.385.000</p>
+                    <img src="img/time.png"
+                         style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">3 ngày</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div class="col-md-4 hot-review-tour">
+            <div class="col-md-12" style="background: white; height: 280px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4>Khám Phá du lịch Đá Nẵng</h4>
+                </div>
+                <div>
+                    <img src="img/money.png"
+                         style="width: 20px; height: 20px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">1.385.000</p>
+                    <img src="img/time.png"
+                         style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">3 ngày</p>
+                </div>
+            </div>
+            <div class="col-md-12" style="background: white; height: 280px; margin-top: 40px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4>Khám Phá du lịch Đá Nẵng</h4>
+                </div>
+                <div>
+                    <img src="img/money.png"
+                         style="width: 20px; height: 20px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">1.385.000</p>
+                    <img src="img/time.png"
+                         style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">3 ngày</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div class="col-md-4 hot-review-tour">
+            <div class="col-md-12" style="background: white; height: 280px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4>Khám Phá du lịch Đá Nẵng</h4>
+                </div>
+                <div>
+                    <img src="img/money.png"
+                         style="width: 20px; height: 20px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">1.385.000</p>
+                    <img src="img/time.png"
+                         style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">3 ngày</p>
+                </div>
+            </div>
+            <div class="col-md-12" style="background: white; height: 280px; margin-top: 40px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4>Khám Phá du lịch Đá Nẵng</h4>
+                </div>
+                <div>
+                    <img src="img/money.png"
+                         style="width: 20px; height: 20px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">1.385.000</p>
+                    <img src="img/time.png"
+                         style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
+                    <p class="float-left" style="margin-left: 10px">3 ngày</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
