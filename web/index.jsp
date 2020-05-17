@@ -80,9 +80,9 @@
                     <%
                         } else {
                     %>
-<%--                            <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
+                            <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
                                     <a id="role" href="#" style="color: red; font-size: 17px"><%=role%></a>
-                            </p>--%>
+                            </p>
                             <a id="dangxuat" class="nav-link" style="color: white; font-size: 19px" href="/logout">Đăng Xuất</a>
                     <%
                         }
