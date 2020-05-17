@@ -6,16 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<<<<<<< HEAD
-<html>
-<head>
-  <title>Trang Chu Website Du Lich</title>
-</head>
-<body>
-<div id="page">
-  <button><a href="/login?action=signin">Trang Đăng Nhập</a></button>
-</div>
-=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -70,7 +60,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
-                       href="#">Đăng Nhập</a>
+                       href="/login?action=signin">Đăng Nhập</a>
                 </li>
             </ul>
         </div>
@@ -93,14 +83,14 @@
 <div class="container">
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div id="col1" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
+            <div class="content">Testing</div>
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div id="col2" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
+            <div class="content">Testing</div>
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
-
+        <div id="col3" class="col-md-4 col-md-offset-2" style="height: 527px; background: #0b2e13">
+            <div class="content">Testing</div>
         </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>
@@ -134,6 +124,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
->>>>>>> be0c6a89764c8d5b7443ace9570c5079ec82560a
+<script type="text/javascript" src="../js/utilities.js"></script>
+<script type="text/javascript" src="../js/validate-form.js"></script>
+<script type="text/javascript" src="../js/validate-register.js"></script>
 </body>
 </html>

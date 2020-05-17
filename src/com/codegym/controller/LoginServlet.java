@@ -107,6 +107,10 @@ public class LoginServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>" + (resultStr = (result) ? username : "Tai Khoan nay khong ton tai !!!"));
             out.println("</h1>");
+            out.println("<button>");
+            out.println("<a href='/index'>");
+            out.println("</a>");
+            out.println("</button>");
             out.println("</body>");
             out.println("</html>");
 
