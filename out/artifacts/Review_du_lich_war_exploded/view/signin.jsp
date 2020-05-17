@@ -50,6 +50,7 @@
                     </div>
                     <div class="row align-items-center remember">
                         <input type="checkbox">Remember
+                        <div id="feedbackRemember"></div>
                     </div>
                     <div class="form-group">
                         <input id="submitBtn" type="submit" name="submit" value="Sign in" class="btn float-right signin_btn">

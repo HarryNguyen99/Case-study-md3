@@ -6,6 +6,12 @@ let locFeedbackUsername = document.getElementById("feedbackUsername");
 let locPassword = document.getElementById("pwd");
 let locFeedbackPassword = document.getElementById("feedbackPassword");
 
+let locFeedbackRemember = document.getElementById("feedbackRemember");
+
+function checkFeedbackRemember(event) {
+    console.log(locFeedbackRemember.checked);
+}
+
 function checkUsername(event) {
     let username = locUsername.value;
     let result = username.match(/[a-zA-Z0-9_ ]/g);
@@ -45,4 +51,5 @@ tipPassword();
 locBtnSubmit.addEventListener("click", function(event){
     checkUsername(event);
     checkPassword(event);
+    checkFeedbackRemember(event);
 }, false);

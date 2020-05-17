@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+<%
+    String username = request.getParameter("account");
+%>
 <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
     <div class="container-fluid">
         <a class="navbar-branch" id="logo" href="#">
@@ -60,6 +63,10 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="margin-top: 9px; margin-right: 10px">
+                    <a href="#" style="color: white; font-size: 19px"><%=username%>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white; font-size: 19px"
                        href="/login?action=signin">Đăng Nhập</a>
@@ -88,7 +95,7 @@
         <div class="col-md-4 hot-review-tour">
             <div class="col-md-12" style="background: white; height: 380px">
                 <a href="#"><img src="img/cau-rong-da-nang.jpg"
-                     style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
                 <div style="width: 100%; margin-top: 10px">
                     <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
                     <h4 class="float-right" style="margin-left: 5px">5.0</h4>
@@ -96,10 +103,10 @@
                          style="width: 25px; height: 25px" class="float-right">
                 </div>
                 <div style="width: 100%" class="float-left">
-                <h4>Cầu Rồng Đà NẴng</h4>
-                <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
-                    cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
-                    ... <a href="#">Xem thêm</a></p>
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... <a href="#">Xem thêm</a></p>
                 </div>
             </div>
             <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
