@@ -99,6 +99,7 @@
             <div class="col-md-12" style="background: red">
                 <h2>flglfkjgldkfjgjgkldjgkldgjkldjglfhgldjl</h2>
             </div>
+        </div>
     </div>
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>
     <div class="row">

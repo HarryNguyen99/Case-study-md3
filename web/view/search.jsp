@@ -1,31 +1,30 @@
 <%--
   Created by IntelliJ IDEA.
-  User: harrynguyen
-  Date: 15/05/2020
-  Time: 15:09
+  User: Admin
+  Date: 17/05/2020
+  Time: 11:32 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>index</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <title>Tìm kiếm</title>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
     <div class="container-fluid">
         <a class="navbar-branch" id="logo" href="#">
-            <img src="img/logoDBT2.png" height="40"/></a>
+            <img src="../img/logoDBT2.png" height="40"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive">
             <samp class="navbar-toggler-icon"></samp>
@@ -75,65 +74,82 @@
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/banner2.png">
+            <img src="../img/banner2.png">
         </div>
         <div class="carousel-item">
-            <img src="img/banner3.png">
+            <img src="../img/banner3.png">
         </div>
     </div>
 </div>
 <div class="container">
-    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
+    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour </h3>
     <div class="row">
-        <div class="col-md-4 spacing" style="height: 527px">
-        <div class="col-md-12" style="background: red">
-            <h2>hhhhhfldjlkfjsdljflsdjfljsdlfjsdljfsdljfl</h2>
-        </div>
-        </div>
-        <div class="col-md-4 spacing" style="height: 527px">
-            <div class="col-md-12" style="background: black">
-                <h2>fjgkfjgljkfgldfjgldjgldjgljfgldjfgljd</h2>
+        <div class="col-md-4 hot-tour"  >
+            <div style="background: white; float: left">
+                <div style="width:110px; height: 110px; margin-left: 0; margin-right: 0">
+                    <img src="../img/background.jpg" height="70px" width="70px">
+                </div>
+
+                <div style="margin: 0 auto">
+                    <p>Kham pha du lich da nang</p>
+                    <p><img src="../img/money.png" height="15" width="15" > 10000000 <span>VND</span></p>
+                    <p><img src="../img/time.png" height="15" width="15" > 3 <span>Ngay</span></p>
+
+                </div>
             </div>
-        </div>
-        <div class="col-md-4 spacing" style="height: 527px">
-            <div class="col-md-12" style="background: red">
-                <h2>flglfkjgldkfjgjgkldjgkldgjkldjglfhgldjl</h2>
-            </div>
-        </div>
-    </div>
-    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour</h3>
-    <div class="row">
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
+            <div class="hot-tour">1</div>
 
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
+        <div class="col-md-4">
 
         </div>
-        <div class="col-md-4 " style="height: 527px; background: #0b2e13">
+        <div class="col-md-4">
 
         </div>
     </div>
+    <h3 style="margin-top: 20px; margin-bottom: 20px">Địa điểm nổi bật</h3>
+    <div>
+        <div class="col-md-4">
+            <div class="col-md-12"></div>
+            <div class="col-md-12"></div>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-12"></div>
+            <div class="col-md-12"></div>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-12"></div>
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+
 </div>
-<div class="container-fluid" style="background: black; height: 500px; margin-top: 20px">
-    <div style=" width: 700px; height: 450px; margin: 25px auto; text-align: center">
-        <img src="img/logoDBT.png" style="margin: 70px auto 30px auto">
-        <p style="font-size: 60px;color: white ">Luôn đồng hành cùng bạn</p>
-    </div>
-</div>
+<div class="container">
 
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/utilities.js"></script>
-<script type="text/javascript" src="js/validate-form.js"></script>
-<script type="text/javascript" src="js/validate-register.js"></script>
+    <div class="container-fluid" style="background: black; height: 500px; margin-top: 20px">
+        <div style=" width: 700px; height: 450px; margin: 25px auto; text-align: center">
+            <img src="../img/logoDBT.png" style="margin: 70px auto 30px auto">
+            <p style="font-size: 60px;color: white ">Luôn đồng hành cùng bạn</p>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/utilities.js"></script>
+    <script type="text/javascript" src="js/validate-form.js"></script>
+    <script type="text/javascript" src="js/validate-register.js"></script>
+
 </body>
 </html>
