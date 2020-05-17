@@ -95,10 +95,10 @@
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/images1.png">
+            <img src="img/banner2.png">
         </div>
         <div class="carousel-item">
-            <img src="img/banner2.png.jpg">
+            <img src="img/images1.png">
         </div>
     </div>
 </div>
