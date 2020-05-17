@@ -23,9 +23,10 @@
 </head>
 <body>
 <%
-    String username = request.getParameter("account");
+    String fullname = request.getParameter("account");
+    String role = request.getParameter("typeAccount");
 %>
-<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
+<nav id="navigation" class="navbar navbar-expand-md navbar-light bg-primary sticky-top justify-content-left">
     <div class="container-fluid">
         <a class="navbar-branch" id="logo" href="#">
             <img src="img/logoDBT2.png" height="40"/></a>
@@ -64,12 +65,24 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" style="margin-top: 9px; margin-right: 10px">
-                    <a href="#" style="color: white; font-size: 19px"><%=username%>
+                    <a href="#" style="color: white; font-size: 19px">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: white; font-size: 19px"
-                       href="/login?action=signin">Đăng Nhập</a>
+                    <%
+                        if (fullname == null) {
+                    %>
+                            <a class="nav-link" style="color: white; font-size: 19px" href="/login?action=signin">Đăng Nhập</a>
+                    <%
+                        } else {
+                    %>
+                            <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
+                                    <a id="role" href="#" style="color: red; font-size: 17px"><%=role%></a>
+                            </p>
+                            <a id="dangxuat" class="nav-link" style="color: white; font-size: 19px" href="/logout">Đăng Xuất</a>
+                    <%
+                        }
+                    %>
                 </li>
             </ul>
         </div>
@@ -92,6 +105,7 @@
 <div class="container">
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
+        <div class="col-md-4 spacing" style="height: 380px">
         <div class="col-md-4 hot-review-tour">
             <div class="col-md-12" style="background: white; height: 380px">
                 <a href="#"><img src="img/cau-rong-da-nang.jpg"
@@ -106,6 +120,7 @@
                     <h4>Cầu Rồng Đà NẴng</h4>
                     <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
                         cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ... Xem thêm</p>
                         ... <a href="#">Xem thêm</a></p>
                 </div>
             </div>
@@ -126,6 +141,14 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-4 spacing" style="height: 380px">
+            <div class="col-md-12" style="background: white">
+                <h2>hhhhhfldjlkfjs</h2>ß
+            </div>
+        </div>
+        <div class="col-md-4 spacing" style="height: 380px">
+            <div class="col-md-12" style="background: white">
+                <h2>hhhhhfldjlkfjs</h2>
         <div class="col-md-4 hot-review-tour">
             <div class="col-md-12" style="background: white; height: 380px">
                 <a href="#"><img src="img/cau-rong-da-nang.jpg"

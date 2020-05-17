@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
     <link rel="stylesheet" href="../css/singn-in.css">
     <title>Sign In</title>
-
 </head>
 <body>
 <div class="container">
@@ -37,6 +36,7 @@
                             </span>
                         </div>
                         <input id="usrInput" type="text" name="username" class="form-control" placeholder="username">
+                        <br/>
                         <div id="feedbackUsername" class="tip"></div>
                     </div>
                     <div class="input-group form-group">
@@ -46,23 +46,20 @@
                             </span>
                         </div>
                         <input id="pwd" type="password" name="password" class="form-control" placeholder="password">
+                        <br/>
                         <div id="feedbackPassword" class="tip"></div>
                     </div>
                     <div class="row align-items-center remember">
                         <input type="checkbox">Remember
-                        <div id="feedbackRemember"></div>
                     </div>
                     <div class="form-group">
                         <input id="submitBtn" type="submit" name="submit" value="Sign in" class="btn float-right signin_btn">
                     </div>
                 </form>
             </div>
-            <div class="card-footer">
+            <div id="footer" class="card-footer">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account?<a style="color: #FFC312" href="/login?action=signup">Sign Up</a>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a style="color: #FFC312" href="#">Forgot your password?</a>
+                    Don't have an account?<a id="signup" style="color: #FFC312" href="/login?action=signup">Sign Up</a>
                 </div>
             </div>
         </div>

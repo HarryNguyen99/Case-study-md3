@@ -107,9 +107,20 @@ html,body{
 }
 
 .feedback {
-    color: red;;
+    color: red;
     font-size: 14px;
     margin-top: -10px;
     margin-left: 50px;
 }
 
+#signup {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom: 4px;
+    left: 5px;
+}
+
+#footer {
+    margin-top: 15px;
+}
