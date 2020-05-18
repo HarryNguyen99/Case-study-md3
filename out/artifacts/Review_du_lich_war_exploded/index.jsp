@@ -92,6 +92,7 @@
     <ul class="carousel-indicators">
         <li data-target="#banner" data-slide-to="0" class="active"></li>
         <li data-target="#banner" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="2"></li>
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -100,12 +101,14 @@
         <div class="carousel-item">
             <img src="img/images1.png">
         </div>
+        <div class="carousel-item">
+            <img src="img/banner3.png">
+        </div>
     </div>
 </div>
 <div class="container">
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT reviews</h3>
     <div class="row">
-        <div class="col-md-4 spacing" style="height: 380px">
         <div class="col-md-4 hot-review-tour">
             <div class="col-md-12" style="background: white; height: 380px">
                 <a href="#"><img src="img/cau-rong-da-nang.jpg"
@@ -120,50 +123,7 @@
                     <h4>Cầu Rồng Đà NẴng</h4>
                     <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
                         cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
-                        ... Xem thêm</p>
-                        ... <a href="#">Xem thêm</a></p>
-                </div>
-            </div>
-            <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
-                <a href="#"><img src="img/cau-rong-da-nang.jpg"
-                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
-                <div style="width: 100%; margin-top: 10px">
-                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
-                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
-                    <img src="img/star.png"
-                         style="width: 25px; height: 25px" class="float-right">
-                </div>
-                <div style="width: 100%" class="float-left">
-                    <h4>Cầu Rồng Đà NẴng</h4>
-                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
-                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
-                        ... <a href="#">Xem thêm</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 spacing" style="height: 380px">
-            <div class="col-md-12" style="background: white">
-                <h2>hhhhhfldjlkfjs</h2>ß
-            </div>
-        </div>
-        <div class="col-md-4 spacing" style="height: 380px">
-            <div class="col-md-12" style="background: white">
-                <h2>hhhhhfldjlkfjs</h2>
-        <div class="col-md-4 hot-review-tour">
-            <div class="col-md-12" style="background: white; height: 380px">
-                <a href="#"><img src="img/cau-rong-da-nang.jpg"
-                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
-                <div style="width: 100%; margin-top: 10px">
-                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
-                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
-                    <img src="img/star.png"
-                         style="width: 25px; height: 25px" class="float-right">
-                </div>
-                <div style="width: 100%" class="float-left">
-                    <h4>Cầu Rồng Đà NẴng</h4>
-                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
-                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
-                        ... <a href="#">Xem thêm</a></p>
+                        ...<a href="#">Xem thêm</a></p>
                 </div>
             </div>
             <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
@@ -197,7 +157,41 @@
                     <h4>Cầu Rồng Đà NẴng</h4>
                     <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
                         cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ...<a href="#">Xem thêm</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
                         ... <a href="#">Xem thêm</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 hot-review-tour">
+            <div class="col-md-12" style="background: white; height: 380px">
+                <a href="#"><img src="img/cau-rong-da-nang.jpg"
+                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <div style="width: 100%; margin-top: 10px">
+                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
+                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
+                    <img src="img/star.png"
+                         style="width: 25px; height: 25px" class="float-right">
+                </div>
+                <div style="width: 100%" class="float-left">
+                    <h4>Cầu Rồng Đà NẴng</h4>
+                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
+                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                        ...<a href="#">Xem thêm</a></p>
                 </div>
             </div>
             <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
@@ -292,8 +286,7 @@
                     <h4>Khám Phá du lịch Đá Nẵng</h4>
                 </div>
                 <div>
-                    <img src="img/money.png"
-                         style="width: 20px; height: 20px" class="float-left">
+                    <img src="img/money.png"style="width: 20px; height: 20px" class="float-left">
                     <p class="float-left" style="margin-left: 10px">1.385.000</p>
                     <img src="img/time.png"
                          style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
@@ -317,6 +310,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <div class="container-fluid" style="background: black; height: 500px; margin-top: 20px">
     <div style=" width: 700px; height: 450px; margin: 25px auto; text-align: center">
