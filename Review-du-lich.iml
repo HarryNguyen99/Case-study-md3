@@ -26,8 +26,8 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.23-bin" level="project" />
     <orderEntry type="library" name="servlet-api" level="project" />
     <orderEntry type="library" name="tomcat-api" level="project" />
-    <orderEntry type="library" name="javax.mail" level="project" />
     <orderEntry type="library" name="taglibs-standard-impl-1.2.5" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.23-bin1" level="project" />
@@ -40,5 +40,8 @@
     <orderEntry type="library" name="javax.mail1" level="project" />
     <orderEntry type="library" name="taglibs-standard-impl-1.2.52" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.48-bin" level="project" />
+=======
+    <orderEntry type="library" name="javax.mail" level="project" />
+>>>>>>> 447061a6ba90755b36cfad725f39aa0d912479c1
   </component>
 </module>

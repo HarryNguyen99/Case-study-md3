@@ -8,10 +8,11 @@
           <element id="module-output" name="Review-du-lich" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.mail" />
           <element id="library" level="project" name="mysql-connector-java-5.1.23-bin" />
           <element id="library" level="project" name="tomcat-api" />
-          <element id="library" level="project" name="javax.mail" />
           <element id="library" level="project" name="taglibs-standard-impl-1.2.5" />
+<<<<<<< HEAD
           <element id="library" level="project" name="lib" />
           <element id="library" level="project" name="mysql-connector-java-5.1.23-bin1" />
           <element id="library" level="project" name="tomcat-api1" />
@@ -21,6 +22,8 @@
           <element id="library" level="project" name="tomcat-api2" />
           <element id="library" level="project" name="javax.mail1" />
           <element id="library" level="project" name="mysql-connector-java-5.1.48-bin" />
+=======
+>>>>>>> 447061a6ba90755b36cfad725f39aa0d912479c1
         </element>
       </element>
     </root>

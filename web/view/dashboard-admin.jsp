@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Confirm email</title>
+    <title>Dashboard Admin</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
@@ -70,8 +70,7 @@
 </nav>
 <div class="container">
     <div class="formConfirm">
-        <h1 class="confirm">Bạn hãy đăng nhập vào email để kích hoạt tài khoản</h1>
-        <a href="https://mail.google.com/mail/u/?authuser=${email}">Hòm Thư email</a>
+        <h1 class="success">Xác Nhận Thành Công !!!</h1>
     </div>
 </div>
 <div class="container-fluid" style="background: black; height: 500px; margin-top: 20px">

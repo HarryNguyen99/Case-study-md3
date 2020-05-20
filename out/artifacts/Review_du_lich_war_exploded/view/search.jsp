@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -81,46 +82,50 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour </h3>
-    <div class="row">
-        <div class="col-md-4 hot-tour">
-            <div style="background: white; float: left">
-                <div style="width:110px; height: 110px; margin-left: 0; margin-right: 0">
-                    <img src="../img/background.jpg" height="70px" width="70px">
-                </div>
+<%--<div class="container">--%>
+<%--    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour </h3>--%>
+<%--    <div class="row">--%>
+<%--        <div class="col-md-4 hot-tour">--%>
+<%--            <div style="background: white; float: left">--%>
+<%--                <div style="width:110px; height: 110px; margin-left: 0; margin-right: 0">--%>
+<%--                    <img src="../img/background.jpg" height="70px" width="70px">--%>
+<%--                </div>--%>
 
-                <div style="margin: 0 auto">
-                    <p>Kham pha du lich da nang</p>
-                    <p><img src="../img/money.png" height="15" width="15"> 10000000 <span>VND</span></p>
-                    <p><img src="../img/time.png" height="15" width="15"> 3 <span>Ngay</span></p>
+<%--                <div style="margin: 0 auto">--%>
+<%--                    <p>Kham pha du lich da nang</p>--%>
+<%--                    <p><img src="../img/money.png" height="15" width="15"> 10000000 <span>VND</span></p>--%>
+<%--                    <p><img src="../img/time.png" height="15" width="15"> 3 <span>Ngay</span></p>--%>
 
-                </div>
-            </div>
-            <div class="hot-tour">1</div>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="hot-tour">1</div>--%>
 
-        </div>
-        <div class="col-md-4">
+<%--        </div>--%>
+<%--        <div class="col-md-4">--%>
 
-        </div>
-        <div class="col-md-4">
+<%--        </div>--%>
+<%--        <div class="col-md-4">--%>
 
-        </div>
-    </div>
+<%--        </div>--%>
+<%--    </div>--%>
     <h3 style="margin-top: 20px; margin-bottom: 20px">Địa điểm nổi bật</h3>
+    <% int i=0; %>;
+
     <div>
-        <div class="col-md-4">
-            <div class="col-md-12"></div>
-            <div class="col-md-12"></div>
-        </div>
-        <div class="col-md-4">
-            <div class="col-md-12"></div>
-            <div class="col-md-12"></div>
-        </div>
-        <div class="col-md-4">
-            <div class="col-md-12"></div>
-            <div class="col-md-12"></div>
-        </div>
+       <table>
+           <tr>
+               <td>Stt</td>
+               <td>Tên bài viết</td>
+               <td>Ngày đăng</td>
+           </tr>
+           <C:forEach var="review" items="${listReview}">
+               <tr>
+                   <td>++i</td>
+                   <td><a href="">${review.getName()}</a></td>
+                   <td><a href="">${review.getDatePost()}</a></td>
+               </tr>
+           </C:forEach>
+       </table>
     </div>
 
 </div>
