@@ -84,7 +84,7 @@
 <div class="container">
     <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour </h3>
     <div class="row">
-        <div class="col-md-4 hot-tour"  >
+        <div class="col-md-4 hot-tour">
             <div style="background: white; float: left">
                 <div style="width:110px; height: 110px; margin-left: 0; margin-right: 0">
                     <img src="../img/background.jpg" height="70px" width="70px">
@@ -92,8 +92,8 @@
 
                 <div style="margin: 0 auto">
                     <p>Kham pha du lich da nang</p>
-                    <p><img src="../img/money.png" height="15" width="15" > 10000000 <span>VND</span></p>
-                    <p><img src="../img/time.png" height="15" width="15" > 3 <span>Ngay</span></p>
+                    <p><img src="../img/money.png" height="15" width="15"> 10000000 <span>VND</span></p>
+                    <p><img src="../img/time.png" height="15" width="15"> 3 <span>Ngay</span></p>
 
                 </div>
             </div>
@@ -150,6 +150,6 @@
     <script type="text/javascript" src="js/utilities.js"></script>
     <script type="text/javascript" src="js/validate-form.js"></script>
     <script type="text/javascript" src="js/validate-register.js"></script>
-
+</div>
 </body>
 </html>

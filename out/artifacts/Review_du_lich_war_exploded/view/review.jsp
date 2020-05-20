@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Admin
-  Date: 17/05/2020
-  Time: 11:32 AM
+  Date: 19/05/2020
+  Time: 4:36 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../css/search.css">
-    <title>Tìm kiếm</title>
+    <link rel="stylesheet" href="../css/review.css">
+    <title>Chi tiết review</title>
 </head>
 <body>
 
@@ -81,50 +81,28 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <h3 style="margin-top: 20px; margin-bottom: 20px">HOT Tour </h3>
+<div class="container main">
     <div class="row">
-        <div class="col-md-4 hot-tour">
-            <div style="background: white; float: left">
-                <div style="width:110px; height: 110px; margin-left: 0; margin-right: 0">
-                    <img src="../img/background.jpg" height="70px" width="70px">
-                </div>
 
-                <div style="margin: 0 auto">
-                    <p>Kham pha du lich da nang</p>
-                    <p><img src="../img/money.png" height="15" width="15"> 10000000 <span>VND</span></p>
-                    <p><img src="../img/time.png" height="15" width="15"> 3 <span>Ngay</span></p>
-
-                </div>
-            </div>
-            <div class="hot-tour">1</div>
-
-        </div>
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-
-        </div>
     </div>
-    <h3 style="margin-top: 20px; margin-bottom: 20px">Địa điểm nổi bật</h3>
+    <div class="text-center" style=" width: 100%; margin-top:30px ">Ten bai viet</div>
+
     <div>
-        <div class="col-md-4">
-            <div class="col-md-12"></div>
-            <div class="col-md-12"></div>
-        </div>
-        <div class="col-md-4">
-            <div class="col-md-12"></div>
-            <div class="col-md-12"></div>
-        </div>
-        <div class="col-md-4">
-            <div class="col-md-12"></div>
-            <div class="col-md-12"></div>
-        </div>
+        <div style="float: left">diem bai viet</div>
+        <div style="float: left"><img src="../img/star.png" width="20px" height="20"></div>
+        <div style="float: left"><p>so diem</p></div>
     </div>
+    <div style="clear: left">tit bai viet</div>
+    <div><img src="../img/banner3.png" width="100%"></div>
+    <div>noi dung</div>
+    <div>
+        <div style="float: left">Danh gia bai viet</div>
+        <div style="float: left">sao</div>
+    </div>
+
 
 </div>
-<div class="container">
+<div class="container-fluid">
 
     <div class="container-fluid" style="background: black; height: 500px; margin-top: 20px">
         <div style=" width: 700px; height: 450px; margin: 25px auto; text-align: center">
