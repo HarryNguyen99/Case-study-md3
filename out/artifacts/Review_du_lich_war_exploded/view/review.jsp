@@ -87,13 +87,13 @@
     </div>
     <div class="text-center" style=" width: 100%; margin-top:30px ">Ten bai viet</div>
 
-<div >
-    <div style="float: left">diem bai viet</div>
-    <div style="float: left"><img src="../img/star.png" width="20px" height="20"></div>
-    <div style="float: left"><p>so diem</p></div>
-</div>
-<div style="clear: left">tit bai viet</div>
-    <div><img src="../img/banner3.png" width="100%" ></div>
+    <div>
+        <div style="float: left">diem bai viet</div>
+        <div style="float: left"><img src="../img/star.png" width="20px" height="20"></div>
+        <div style="float: left"><p>so diem</p></div>
+    </div>
+    <div style="clear: left">tit bai viet</div>
+    <div><img src="../img/banner3.png" width="100%"></div>
     <div>noi dung</div>
     <div>
         <div style="float: left">Danh gia bai viet</div>
