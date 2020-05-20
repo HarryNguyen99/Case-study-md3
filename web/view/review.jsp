@@ -82,23 +82,25 @@
     </div>
 </div>
 <div class="container main">
-    <div class="row">
+    <div class="row"></div>
+    <c:forEach items="${review}" var="review">
 
-    </div>
-    <div class="text-center" style=" width: 100%; margin-top:30px ">Ten bai viet</div>
+        <div class="text-center" style=" width: 100%; margin-top:30px ">${review.getName()}</div>
 
-    <div>
-        <div style="float: left">diem bai viet</div>
-        <div style="float: left"><img src="../img/star.png" width="20px" height="20"></div>
-        <div style="float: left"><p>so diem</p></div>
-    </div>
-    <div style="clear: left">tit bai viet</div>
-    <div><img src="../img/banner3.png" width="100%"></div>
-    <div>noi dung</div>
-    <div>
-        <div style="float: left">Danh gia bai viet</div>
-        <div style="float: left">sao</div>
-    </div>
+        <div>
+            <div style="float: left">diem bai viet</div>
+            <div style="float: left"><img src="../img/star.png" width="20px" height="20"></div>
+            <div style="float: left"><p>so diem</p></div>
+        </div>
+        <div style="clear: left">${review.getTitle()}</div>
+        <div><img src=${review.getPicture()} width="100%"></div>
+        <div>${review.getContent()}</div>
+        <div>
+            <div style="float: left">Danh gia bai viet</div>
+            <div style="float: left">anh sao</div>
+        </div>
+
+    </c:forEach>
 
 
 </div>
