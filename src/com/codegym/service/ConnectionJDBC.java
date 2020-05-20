@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionJDBC {
-    private String jdbcURL = "jdbc:mysql://localhost:3306/postsreview";
+    private String jdbcURL = "jdbc:mysql://localhost:3306/datareview";
     private String jdbcUsername = "root";
     private String jdbcPassword = "123456";
 
