@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="reviewDuLich" uuid="a5908c1c-ea92-41bb-aca7-a4d5cd5b4f0b">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
     </data-source>
   </component>

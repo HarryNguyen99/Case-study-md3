@@ -20,6 +20,7 @@
           <element id="library" level="project" name="mysql-connector-java-5.1.23-bin2" />
           <element id="library" level="project" name="tomcat-api2" />
           <element id="library" level="project" name="javax.mail1" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.48-bin" />
         </element>
       </element>
     </root>

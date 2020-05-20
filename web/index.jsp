@@ -119,19 +119,20 @@
     <div class="row">
         <div class="col-md-4 hot-review-tour">
             <div class="col-md-12" style="background: white; height: 380px">
-                <img src="img/cau-rong-da-nang.jpg" style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px">
+                <c:forEach var="review" items="${hotreviews}">
+                <img id="poinReview" src="${review.getPicture()}" style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px">
                 <div style="width: 100%; margin-top: 10px">
-                    <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
-                    <h4 class="float-right" style="margin-left: 5px">5.0</h4>
-                    <img src="img/star.png"
+                    <h4 id="nameUser" style="color: blue" class="float-left">${review.getName()}</h4>
+                    <h4  class="float-right" style="margin-left: 5px">${review.getStar()}</h4>
+                    <img id="imgReviw" src="img/star.png"
                          style="width: 25px; height: 25px" class="float-right">
                 </div>
                 <div style="width: 100%" class="float-left">
-                    <h4>Cầu Rồng Đà NẴng</h4>
-                    <p style="width: 320px; height: auto">Cầu Rồng Đà Nẵng với hệ thống ánh sáng hiện đại
-                        cùng âm thanh và ánh sáng cộng hưởng trong bán kính 300m ở khu vực đầu Rồng phun lửa
+                    <h4 id="typeReview">${review.getDestinations()}</h4>
+                    <p id="contentReview" style="width: 320px; height: auto">${review.getTitle()}
                         ...<a href="#">Xem thêm</a></p>
                 </div>
+                </c:forEach>
             </div>
             <div class="col-md-12" style="height: 380px; background: white; margin-top: 40px">
                 <a href="#"><img src="img/cau-rong-da-nang.jpg"
