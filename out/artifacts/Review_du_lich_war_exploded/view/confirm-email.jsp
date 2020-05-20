@@ -70,7 +70,8 @@
 </nav>
 <div class="container">
     <div class="formConfirm">
-        <h1 class="confirm">Bạn hãy vào email để xác nhận.</h1>
+        <h1 class="confirm">Bạn hãy đăng nhập vào email để kích hoạt tài khoản</h1>
+        <a href="https://mail.google.com/mail/u/?authuser=${email}">Hòm Thư email</a>
     </div>
 </div>
 <div class="container-fluid" style="background: black; height: 500px; margin-top: 20px">

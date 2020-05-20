@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../css/singn-in.css">
-    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <title>Đăng Nhập</title>
 </head>
 <body>
 <div class="container">
     <div class="d-flex justify-content-center h-100">
         <div class="card-signin">
             <div class="card-header">
-                <h3>Sign In</h3>
+                <h3>Đăng Nhập</h3>
             </div>
             <div class="card-body">
                 <form method="post">
@@ -53,13 +53,13 @@
                         <input type="checkbox">Remember
                     </div>
                     <div class="form-group">
-                        <input id="submitBtn" type="submit" name="submit" value="Sign in" class="btn float-right signin_btn">
+                        <input id="submitBtn" type="submit" name="submit" value="Đăng Nhập" class="btn float-right signin_btn">
                     </div>
                 </form>
             </div>
             <div id="footer" class="card-footer">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account?<a id="signup" style="color: #FFC312" href="/login?action=signup">Sign Up</a>
+                    Bạn Không Có Tài Khoản ?<a id="signup" style="color: #FFC312" href="/login?action=signup">Đăng Ký</a>
                 </div>
             </div>
         </div>
@@ -78,6 +78,5 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="../js/utilities.js"></script>
 <script type="text/javascript" src="../js/validate-form.js"></script>
-<script type="text/javascript" src="../js/validate-register.js"></script>
 </body>
 </html>
