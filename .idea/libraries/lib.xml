@@ -2,9 +2,11 @@
   <library name="lib">
     <CLASSES>
       <root url="file:///DuLieu/LapTrinh/Java/moi-truong/Tomcat/webapps/examples/WEB-INF/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../DuLieu/LapTrinh/Java/moi-truong/Tomcat/webapps/examples/WEB-INF/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
     <jarDirectory url="file:///DuLieu/LapTrinh/Java/moi-truong/Tomcat/webapps/examples/WEB-INF/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../DuLieu/LapTrinh/Java/moi-truong/Tomcat/webapps/examples/WEB-INF/lib" recursive="false" />
   </library>
 </component>

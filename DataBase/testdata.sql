@@ -21,7 +21,7 @@
 create database datareview;
 use datareview;
 DROP TABLE IF EXISTS `account`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;account
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `account` (
   `id_account` int NOT NULL AUTO_INCREMENT,

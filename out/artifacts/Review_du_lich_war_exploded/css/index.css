@@ -15,11 +15,24 @@ body {
 }
 
 .search-box {
-    width: 297px;
+    width: 350px;
     height: 40px;
     background: #A4C8FD;
     margin-left:  20px;
     border-radius: 5px 5px 5px;
+}
+.input-group-prepend {
+    margin-bottom: 20px;
+}
+.input-group.md-form.form-sm.form-1 input{
+    border: 1px solid #bdbdbd;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+
+.search-btn {
+    height: 40px;
 }
 
 .search-box input[type=text]:hover, .search-box input[type=text]:focus, .search-box input[type=text]:active {

@@ -34,11 +34,18 @@
                 data-target="#navbarResponsive">
             <samp class="navbar-toggler-icon"></samp>
         </button>
-        <div class="collapse navbar-collapse " id="navbarResponsive">
-            <div class="search-box">
-                <input class="form-control" placeholder="Tìm kiếm: Địa điểm, Lịch trình..." type="text">
-                <button class="btn btn-link search-btn"><i class="fa fa-search"></i>
-                </button>
+        <div class="collapse navbar-collapse  " id="navbarResponsive">
+            <div style="width: 350px; height: 40px; margin-right: 20px">
+                <form method="post" action="/viewservlet?action=search">
+                    <div class="search-box input-group form-group">
+                        <div class="input-group-prepend " style="height: 40px">
+                            <span class="input-group-text search-btn">
+                                <button type="submit" style="border: 0; background: 0px"><img src="/img/ic_search.png" width="20" height="20"></button>
+                            </span>
+                        </div>
+                        <input class="form-control" placeholder="Tìm kiếm: Địa điểm, Lịch trình..." type="text">
+                    </div>
+                </form>
             </div>
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
@@ -72,14 +79,15 @@
                     <%
                         if (fullname == null) {
                     %>
-                            <a class="nav-link" style="color: white; font-size: 19px" href="/login?action=signin">Đăng Nhập</a>
+                    <a class="nav-link" style="color: white; font-size: 19px" href="/login?action=signin">Đăng Nhập</a>
                     <%
-                        } else {
+                    } else {
                     %>
-                            <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
-                                    <a id="role" href="#" style="color: red; font-size: 17px"><%=role%></a>
-                            </p>
-                            <a id="dangxuat" class="nav-link" style="color: white; font-size: 19px" href="/logout">Đăng Xuất</a>
+                    <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
+                        <a id="role" href="#" style="color: red; font-size: 17px"><%=role%>
+                        </a>
+                    </p>
+                    <a id="dangxuat" class="nav-link" style="color: white; font-size: 19px" href="/logout">Đăng Xuất</a>
                     <%
                         }
                     %>
@@ -111,8 +119,7 @@
     <div class="row">
         <div class="col-md-4 hot-review-tour">
             <div class="col-md-12" style="background: white; height: 380px">
-                <a href="#"><img src="img/cau-rong-da-nang.jpg"
-                                 style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px"></a>
+                <img src="img/cau-rong-da-nang.jpg" style="width: 320px; height: 179px; border-radius: 5%; margin-top: 15px">
                 <div style="width: 100%; margin-top: 10px">
                     <h4 style="color: blue" class="float-left">Lý Mạc Sầu</h4>
                     <h4 class="float-right" style="margin-left: 5px">5.0</h4>
@@ -286,7 +293,7 @@
                     <h4>Khám Phá du lịch Đá Nẵng</h4>
                 </div>
                 <div>
-                    <img src="img/money.png"style="width: 20px; height: 20px" class="float-left">
+                    <img src="img/money.png" style="width: 20px; height: 20px" class="float-left">
                     <p class="float-left" style="margin-left: 10px">1.385.000</p>
                     <img src="img/time.png"
                          style="width: 20px; height: 20px; margin-left: 40px" class="float-left">
