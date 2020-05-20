@@ -16,11 +16,22 @@ import javax.mail.internet.MimeMessage;
 
 public class DatabaseServiceImpl implements DatabaseService {
     private static final String jdbcURL = "jdbc:mysql://localhost:3306/casestudy3_database";
-    private static String userDB = "root";
-    private static String passDB = "11100001";
+    private String userDB = "root";
+    private String passDB = "11100001";
     private static Connection conn;
 
+    private static final String UPDATE_STATUS = "update casestudy3_database.account set active = 1 where email = ?;";
+
     public DatabaseServiceImpl(){}
+
+    private Connection createConnection() {
+        MySQLConnect mysqlConnect = new MySQLConnect(jdbcURL);
+        mysqlConnect.setDBDriver();
+        mysqlConnect.setCredentials(userDB, passDB);
+        conn = mysqlConnect.openConnection(jdbcURL);
+
+        return conn;
+    }
 
     public void registerAccountToDB(SignupAccount account, String emailAddress) {
         String username = account.getUsername();
@@ -31,10 +42,7 @@ public class DatabaseServiceImpl implements DatabaseService {
         String phonenumber = account.getPhonenumber();
 
         try {
-            MySQLConnect mysqlConnect = new MySQLConnect(jdbcURL);
-            mysqlConnect.setDBDriver();
-            mysqlConnect.setCredentials(userDB, passDB);
-            conn = mysqlConnect.openConnection(jdbcURL);
+            Connection conn = createConnection();
 
             String sql_query = "insert into casestudy3_database.account(id_role, username, password, fullname, phonenumber, email, address, active, online)" +
                                         "values(" +
@@ -97,7 +105,7 @@ public class DatabaseServiceImpl implements DatabaseService {
                 message.setSubject("Email kích hoạt tài khoản Website du lịch");
                 message.setText("Để sử dụng hết chức năng Website hãy kích hoạt tài khoản vừa đăng kí ");
                 message.setText("Bằng cách click vào đường link dưới đây: " +
-                                       "http://localhost:9999/login?action=activation&userEmail=" + userEmail);
+                                       "http://localhost:9999/login?action=signin&userEmail=" + userEmail);
                 Transport.send(message);
             } catch (Exception ex){
                 System.out.println("Sending mail ....." + ex);
@@ -106,25 +114,44 @@ public class DatabaseServiceImpl implements DatabaseService {
     }
 
     public void updateActiveStatus(String userEmail) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
         try {
-            MySQLConnect mysqlConnect = new MySQLConnect(jdbcURL);
-            mysqlConnect.setDBDriver();
-            mysqlConnect.setCredentials(userDB, passDB);
-            conn = mysqlConnect.openConnection(jdbcURL);
+            conn = createConnection();
+            conn.setAutoCommit(false);
+            pstmt = conn.prepareStatement(UPDATE_STATUS);
 
-            String sql_query = "update casestudy3_database.account set active = 1 where email = '" + userEmail + "';";
+            pstmt.setString(1, userEmail);
+            System.out.println(pstmt);
+            pstmt.executeUpdate();
+            conn.commit();
 
-            System.out.println(sql_query);
-
-            MySQLExecute executeObj = new MySQLExecute(conn);
-            executeObj.execute(sql_query);
-        } finally {
+            pstmt.close();
+            conn.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
             try {
                 if (conn != null) {
-                    conn.close();
+                    conn.rollback();
                 }
-            } catch (SQLException ex) {
-                System.err.println("Error can not close Exception !!!");
+            } catch (SQLException ex2) {
+                System.err.println("Error can not roll back connection !!!");
+                ex2.printStackTrace();
+            }
+        } finally {
+            try{
+                if(pstmt!=null) {
+                    pstmt.close();
+                }
+            }catch(SQLException ex){
+                System.err.println("Error can not close PrepareStatement !!!");
+                ex.printStackTrace();
+            }
+            try{
+                if(conn!=null)
+                    conn.close();
+            }catch(SQLException ex){
+                System.err.println("Error can not close Connection !!!");
                 ex.printStackTrace();
             }
         }
@@ -132,11 +159,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 
     public List<String> checkAccountExists(String username, String password) {
         try {
-            MySQLConnect mysqlConnect = new MySQLConnect(jdbcURL);
-            mysqlConnect.setDBDriver();
-            mysqlConnect.setCredentials(userDB, passDB);
-            conn = mysqlConnect.openConnection(jdbcURL);
-
+            Connection conn = createConnection();
             String sql_query = "select role, username, password, fullname from casestudy3_database.account " +
                                       "inner join casestudy3_database.role using(id_role)" +
                                       "where username =  '" + username + "' and password = '" + password + "' and active = 1;";
@@ -177,5 +200,12 @@ public class DatabaseServiceImpl implements DatabaseService {
                 ex.printStackTrace();
             }
         }
+    }
+
+    public void updateOfflineStatus(String account) {
+        Connection conn = createConnection();
+        String sql_query = "update casestudy3_database.account set online = 0 where username = '" + account + "';";
+        MySQLExecute executeObj = new MySQLExecute(conn);
+        executeObj.execute(sql_query);
     }
 }

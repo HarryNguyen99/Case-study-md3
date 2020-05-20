@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../css/singn-in.css">
-    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <title>Đăng Ký</title>
 
 </head>
 <body>
@@ -26,7 +27,7 @@
     <div class="d-flex justify-content-center h-100">
         <div class="card-singup">
             <div class="card-header">
-                <h3>Sign Up</h3>
+                <h3>Đăng Ký</h3>
             </div>
             <div class="card-body">
                 <form method="post">
@@ -44,7 +45,8 @@
                                 <img src="../img/ic_user.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" name="username" class="form-control" placeholder="username">
+                        <input id="usrInput" type="text" name="username" class="form-control" placeholder="username">
+                        <div id="feedbackUsername" class="tip"></div>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -52,8 +54,8 @@
                                 <img src="../img/ic_key.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="password" name="password" class="form-control" placeholder="password"><br>
-                        <p class="validated" style="color: white">Password có ít nhất 6 ký tự và không chứa ký tự đặc biệt</p>
+                        <input id="pwd" type="password" name="password" class="form-control" placeholder="password"><br/>
+                        <div id="feedbackPassword" class="tip"></div>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -61,7 +63,8 @@
                                 <img src="../img/ic_key.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="password" class="form-control" placeholder="confirm password">
+                        <input id="pwd2" type="password" class="form-control" placeholder="confirm password"><br/>
+                        <div id="feedbackPassword2" class="tip"></div>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -69,7 +72,8 @@
                                 <img src="../img/ic_email.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" name="email" class="form-control" placeholder="email">
+                        <input id="email" type="text" name="email" class="form-control" placeholder="email"><br/>
+                        <div id="feedbackEmail" class="tip"></div>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -77,7 +81,8 @@
                                 <img src="../img/ic_phone.png" width="25" height="25">
                             </span>
                         </div>
-                        <input type="text" name="phonenumber" class="form-control" placeholder="phonenumber">
+                        <input id="phoneNumber" type="text" name="phonenumber" class="form-control" placeholder="phonenumber"><br/>
+                        <div id="feedbackPhonenumber" class="tip"></div>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -88,10 +93,11 @@
                         <input type="text" name="address" class="form-control" placeholder="address">
                     </div>
                     <div class="row align-items-center policy">
-                        <input type="checkbox" > You agree to our Privacy policy and term of condition
+                        <input id="policy" type="checkbox" > Đồng ý với chính sách và các điều khoản của chúng tôi
+                        <div id="feedbackPolicy" class="tip"></div>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Sign up" class="btn float-right signup_btn">
+                        <input id="registerBtn2" type="submit" value="Đăng Ký" class="btn float-right signup_btn">
                     </div>
                 </form>
             </div>
@@ -109,5 +115,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/utilities.js"></script>
+<script type="text/javascript" src="../js/validate-register.js"></script>
 </body>
 </html>

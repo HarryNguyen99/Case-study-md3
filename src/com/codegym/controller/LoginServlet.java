@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -14,17 +15,13 @@ import com.codegym.service.DatabaseServiceImpl;
 
 @WebServlet(name="LoginServlet", urlPatterns="/login")
 public class LoginServlet extends HttpServlet {
-    private DatabaseServiceImpl databaseService = new DatabaseServiceImpl();
+    private final DatabaseServiceImpl databaseService = new DatabaseServiceImpl();
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String action = request.getParameter("action");
-        String account = request.getParameter("account");
 
         if (action == null){
             action = "";
-        }
-        if (account == null) {
-            account = "";
         }
 
         switch(action) {
@@ -32,6 +29,7 @@ public class LoginServlet extends HttpServlet {
                 showIndexPage(request, response);
                 break;
             case "signin":
+                activeAccount(request, response);
                 showSignInForm(request, response);
                 break;
             case "welcome-temp":
@@ -39,9 +37,6 @@ public class LoginServlet extends HttpServlet {
                 break;
             case "signup":
                 showSignUpForm(request, response);
-                break;
-            case "activation":
-                activeAccount(request, response);
                 break;
             default:
                 break;
@@ -51,14 +46,9 @@ public class LoginServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String action = request.getParameter("action");
-        String account = request.getParameter("account");
 
         if (action == null) {
             action = "";
-        }
-
-        if (account == null) {
-            account = "";
         }
 
         switch (action) {
@@ -124,6 +114,15 @@ public class LoginServlet extends HttpServlet {
         signUpAccount.setPhonenumber(phonenumber);
 
         databaseService.registerAccountToDB(signUpAccount, email);
+
+        request.setAttribute("email", email);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/confirm-email.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (IOException | ServletException ex) {
+            ex.printStackTrace();
+        }
     }
 
     private void signin(HttpServletRequest request, HttpServletResponse response) {
@@ -134,18 +133,18 @@ public class LoginServlet extends HttpServlet {
         String fullnameUser = "";
         fullnameUser = (inforUser != null) ? inforUser.get(0) : "Tai Khoan nay khong ton tai !!!";
         try {
-            request.setAttribute("fullnameUser", fullnameUser);
-            request.setAttribute("typeAccount", inforUser.get(1));
             RequestDispatcher dispatcher = null;
-            if (fullnameUser != null) {
+            if (inforUser != null) {
+                HttpSession session = request.getSession();
+                session.setAttribute("usernameLogIn", username);
+                request.setAttribute("fullnameUser", fullnameUser);
+                request.setAttribute("typeAccount", inforUser.get(1));
                 dispatcher = request.getRequestDispatcher("view/welcome-to.jsp?action=welcome-to&account=" + fullnameUser + "&typeAccount=" + inforUser.get(1));
             } else {
                 dispatcher = request.getRequestDispatcher("view/failed-signin.jsp");
             }
             dispatcher.forward(request, response);
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        } catch (ServletException ex) {
+        } catch (IOException | ServletException ex) {
             ex.printStackTrace();
         }
     }
@@ -153,5 +152,12 @@ public class LoginServlet extends HttpServlet {
     private void activeAccount(HttpServletRequest request, HttpServletResponse response) {
         String userEmail = request.getParameter("userEmail");
         databaseService.updateActiveStatus(userEmail);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/signin.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }

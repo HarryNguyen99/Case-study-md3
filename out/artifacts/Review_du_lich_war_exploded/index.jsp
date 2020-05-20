@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>index</title>
+    <title>Website Du Lịch</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
@@ -77,7 +77,7 @@
                         } else {
                     %>
                             <p id="fullname" style="color: white; font-size: 19px"><span id="name"><%=fullname%></span><br/>
-                                    <a id="role" href="#" style="color: red; font-size: 17px"><%=role%></a>
+                                    <a id="role" href="/admin_dashboard?role=<%=role%>" style="color: red; font-size: 17px"><%=role%></a>
                             </p>
                             <a id="dangxuat" class="nav-link" style="color: white; font-size: 19px" href="/logout">Đăng Xuất</a>
                     <%
